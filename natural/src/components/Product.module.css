@@ -1,0 +1,14 @@
+.container {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+}
+
+.image {
+  width: 200px;
+  height: 100px;
+}
+
+.titles {
+  color: black;
+}

@@ -1,0 +1,14 @@
+.profilePage {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  grid-template-rows: 1fr, 1fr;
+  /* grid-template-areas: ""; */
+}
+
+/* .profileSide {
+  background-color: red;
+}
+
+.orderSide {
+  background-color: blue;
+} */
