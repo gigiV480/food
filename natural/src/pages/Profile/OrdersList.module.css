@@ -1,0 +1,36 @@
+/* .title {
+  width: inherit;
+  background-color: gray;
+  height: 2rem;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 2rem;
+  border: 1px solid black;
+} */
+
+.title {
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.25rem;
+  border-bottom: 1px solid white;
+}
+
+.listContainer {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid white;
+  width: 1000px;
+  height: 550px;
+}
+
+.list {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 996px;
+  gap: 0.5rem;
+}

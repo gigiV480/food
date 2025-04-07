@@ -1,6 +1,7 @@
 import React from "react";
 import Product from "./Product";
 import classes from "./ProductList.module.css";
+import Card from "../UI/Card";
 
 const DUMMY_PRODUCTS = [
   {
@@ -44,17 +45,21 @@ const DUMMY_PRODUCTS = [
 function ProductList() {
   return (
     <div className={classes.productContainer}>
-      {DUMMY_PRODUCTS.map((pro) => (
-        <Product
-          key={pro.id}
-          item={{
-            id: pro.id,
-            title: pro.title,
-            price: pro.price,
-            src: pro.src,
-          }}
-        />
-      ))}
+      <Card>
+        <ul>
+          {DUMMY_PRODUCTS.map((pro) => (
+            <Product
+              key={pro.id}
+              item={{
+                id: pro.id,
+                title: pro.title,
+                price: pro.price,
+                src: pro.src,
+              }}
+            />
+          ))}
+        </ul>
+      </Card>
     </div>
   );
 }

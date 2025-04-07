@@ -1,14 +1,43 @@
 .profilePage {
+  height: calc(100vh - 55.99px);
   display: grid;
-  grid-template-columns: 400px 1fr;
-  grid-template-rows: 1fr, 1fr;
-  /* grid-template-areas: ""; */
+  grid-template-columns: 500px 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "sidebar main";
 }
 
-/* .profileSide {
-  background-color: red;
+.profileSide {
+  height: inherit;
+  grid-area: sidebar;
+  border: 2px solid white;
 }
 
 .orderSide {
-  background-color: blue;
-} */
+  grid-area: main;
+  margin: 2rem auto;
+}
+
+.profileBtns {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+}
+
+.button {
+  width: 350px;
+  height: 40px;
+  border: none;
+  background-color: #999;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  font-size: small;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #bbbbbb;
+}

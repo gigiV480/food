@@ -35,28 +35,53 @@ function Product(props) {
     );
   };
 
+  // return (
+  //   <div className={classes.container}>
+  //     <img src={src} className={classes.image} />
+  //     <div className={classes.titles}>
+  //       <div>{title}</div>
+  //       <div>{price}$</div>
+  //       <form onSubmit={submitHandler}>
+  //         <Input
+  //           ref={amountInputRef}
+  //           label="Amount"
+  //           input={{
+  //             id: "amount_" + id,
+  //             type: "number",
+  //             min: "1",
+  //             max: "5",
+  //             step: "1",
+  //             defaultValue: "1",
+  //           }}
+  //         />
+  //         <button>Add</button>
+  //       </form>
+  //     </div>
+  //   </div>
+  // );
   return (
     <div className={classes.container}>
-      <img src={src} className={classes.image} />
-      <div className={classes.titles}>
+      <div className={classes.yup}>
+        <img src={src} className={classes.image} />
         <div>{title}</div>
         <div>{price}$</div>
-        <form onSubmit={submitHandler}>
-          <Input
-            ref={amountInputRef}
-            label="Amount"
-            input={{
-              id: "amount_" + id,
-              type: "number",
-              min: "1",
-              max: "5",
-              step: "1",
-              defaultValue: "1",
-            }}
-          />
-          <button>Add</button>
-        </form>
       </div>
+
+      <form onSubmit={submitHandler}>
+        <Input
+          ref={amountInputRef}
+          label="Amount"
+          input={{
+            id: "amount_" + id,
+            type: "number",
+            min: "1",
+            max: "5",
+            step: "1",
+            defaultValue: "1",
+          }}
+        />
+        <button>Add</button>
+      </form>
     </div>
   );
 }

@@ -1,8 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
 import Root from "./pages/Root";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart/Cart";
 import Profile from "./pages/Profile/Profile";
+import { fetchCartData } from "./store/cart-actions";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +20,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchCartData());
+  }, [dispatch]);
+
   return <RouterProvider router={router} />;
 }
 

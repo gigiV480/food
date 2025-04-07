@@ -1,8 +1,8 @@
-.container {
+/* .container {
   width: 200px;
   height: 200px;
   background-color: white;
-}
+} */
 
 .image {
   width: 200px;
@@ -11,4 +11,17 @@
 
 .titles {
   color: black;
+}
+
+.container {
+  width: inherit;
+  height: 100px;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.yup {
+  color: black;
+  display: flex;
+  padding-left: 0;
 }
